@@ -20,7 +20,7 @@ var GuessesLeft = 9;
 function startGame() {
     selectedWord = wordOptions[Math.floor(Math.random() * wordOptions.length)];
     lettersInWord = selectedWord.split("");
-    numBlanks = lettersinWord.length;
+    numBlanks = lettersInWord.length;
 
     // Reset
     guessesLeft = 9;
@@ -52,20 +52,20 @@ function checkLetters(letter) {
 
     // Where letter, populate blanksAndSuccesses array
     if (isLetterInWord) {
-        for (var i = 0; i < numblanks; i++) {
+        for (var i = 0; i < numBlanks; i++) {
             if (selectedWord[i] == letter) {
                 blanksAndSuccesses[i] = letter;
             }
         }
         // Letter was not found
     } else {
-        wrongLetter.push(letter);
+        wrongLetters.push(letter);
         guessesLeft--
     };
 };
 
 function roundComplete() {
-    console.log("Win Count: " + winCount + " | Loss Count: " + lossCount + + " | Gueses Left: " + guessesLeft);
+    console.log("Win Count: " + winCount + " | Loss Count: " + lossCount + " | Gueses Left: " + guessesLeft);
 
     // Update HTML to reflect recent info
     document.getElementById("numGuesses").innerHTML = guessesLeft;

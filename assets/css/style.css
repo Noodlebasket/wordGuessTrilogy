@@ -1,0 +1,20 @@
+.container{
+    text-align: center;
+
+}
+#silly {
+    align-content: center;
+}
+h1,h2 {
+    font-family: 'Permanent Marker', cursive;
+}
+h1 {
+    font-size: 40px;
+}
+h3 {
+    font-family: 'Permanent Marker', cursive;
+}
+p {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 20px;
+}

@@ -8,48 +8,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet"> 
 
 </head>
 
-<body>
+<body class="bg-info">
 
-    <div class="container">
+    <div class="container bg-warning">
 
-        <div class="jumbotron">
+        <div class="jumbotron bg-danger">
 
-            <h1>Hangman Game</h1>
+            <h1>What is that body part?</h1>
+            <p>Press any key to get started!</p>
 
         </div>
 
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title">Word to Guess</h3>
-            </div>
-            <div class="panel-body">
-                <h2 id="wordToGuess">_ _ _ _ _</h2>
-            </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-body">
-                Wrong Guesses: <span id="wrongGuesses"></span>
-            </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-body">
-                Guesses Left: <span id="numGuesses">9</span>
-            </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-body">
-                Win Counter: <span id="winCounter">0</span>
-            </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-body">
-                Loss Counter: <span id="lossCounter">0</span>
-            </div>
-        </div>
+        <div class="row mb-4">
 
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2>Word to Guess</h2>
+                    </div>
+                    <div class="panel-body">
+                        <h3 id="wordToGuess">_ _ _ _ _</h3>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <p>Wrong Guesses: <span id="wrongGuesses"></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <p>Guesses Left: <span id="numGuesses">9</span></p>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <p>Win Counter: <span id="winCounter">0</span></p>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <p>Loss Counter: <span id="lossCounter">0</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <img class="rounded mx-auto d-block" id="silly" alt="silly" src="assets/images/dogfish.jpg">
+        </div>
     </div>
     <!-- Javascript Link -->
     <script src="assets/js/code.js"></script>
